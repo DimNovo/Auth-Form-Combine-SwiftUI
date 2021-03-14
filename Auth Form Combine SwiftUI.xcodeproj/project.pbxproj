@@ -11,6 +11,11 @@
 		74CA333D25FDD9CF00C400D2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CA333C25FDD9CF00C400D2 /* ContentView.swift */; };
 		74CA333F25FDD9CF00C400D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74CA333E25FDD9CF00C400D2 /* Assets.xcassets */; };
 		74CA334225FDD9CF00C400D2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74CA334125FDD9CF00C400D2 /* Preview Assets.xcassets */; };
+		74CA334B25FDDA7E00C400D2 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CA334A25FDDA7E00C400D2 /* String+Extension.swift */; };
+		74CA334E25FDDA9100C400D2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CA334D25FDDA9100C400D2 /* User.swift */; };
+		74CA335125FDDAA500C400D2 /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CA335025FDDAA500C400D2 /* CustomAlert.swift */; };
+		74CA335425FDDADF00C400D2 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CA335325FDDADF00C400D2 /* RegisterView.swift */; };
+		74CA335725FDDAFE00C400D2 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CA335625FDDAFE00C400D2 /* AuthViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +25,11 @@
 		74CA333E25FDD9CF00C400D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74CA334125FDD9CF00C400D2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		74CA334325FDD9CF00C400D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74CA334A25FDDA7E00C400D2 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		74CA334D25FDDA9100C400D2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		74CA335025FDDAA500C400D2 /* CustomAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
+		74CA335325FDDADF00C400D2 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		74CA335625FDDAFE00C400D2 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +63,10 @@
 			isa = PBXGroup;
 			children = (
 				74CA333A25FDD9CF00C400D2 /* Auth_Form_Combine_SwiftUIApp.swift */,
-				74CA333C25FDD9CF00C400D2 /* ContentView.swift */,
+				74CA335D25FDDB6800C400D2 /* Extension */,
+				74CA335B25FDDB6000C400D2 /* Model */,
+				74CA335925FDDB5700C400D2 /* View */,
+				74CA335F25FDDB7300C400D2 /* ViewModel */,
 				74CA333E25FDD9CF00C400D2 /* Assets.xcassets */,
 				74CA334325FDD9CF00C400D2 /* Info.plist */,
 				74CA334025FDD9CF00C400D2 /* Preview Content */,
@@ -67,6 +80,40 @@
 				74CA334125FDD9CF00C400D2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		74CA335925FDDB5700C400D2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				74CA333C25FDD9CF00C400D2 /* ContentView.swift */,
+				74CA335325FDDADF00C400D2 /* RegisterView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		74CA335B25FDDB6000C400D2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				74CA334D25FDDA9100C400D2 /* User.swift */,
+				74CA335025FDDAA500C400D2 /* CustomAlert.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		74CA335D25FDDB6800C400D2 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				74CA334A25FDDA7E00C400D2 /* String+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		74CA335F25FDDB7300C400D2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				74CA335625FDDAFE00C400D2 /* AuthViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +185,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74CA334E25FDDA9100C400D2 /* User.swift in Sources */,
 				74CA333D25FDD9CF00C400D2 /* ContentView.swift in Sources */,
+				74CA334B25FDDA7E00C400D2 /* String+Extension.swift in Sources */,
+				74CA335725FDDAFE00C400D2 /* AuthViewModel.swift in Sources */,
+				74CA335425FDDADF00C400D2 /* RegisterView.swift in Sources */,
 				74CA333B25FDD9CF00C400D2 /* Auth_Form_Combine_SwiftUIApp.swift in Sources */,
+				74CA335125FDDAA500C400D2 /* CustomAlert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
